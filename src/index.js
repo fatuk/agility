@@ -1,6 +1,6 @@
 import './style.css';
 import Konva from 'konva';
-import Developer from './developer';
+import Word from './word';
 
 const stage = new Konva.Stage({
   container: 'container',
@@ -9,11 +9,12 @@ const stage = new Konva.Stage({
 });
 
 const layer = new Konva.Layer();
-const devOptions = {
-  stage: stage,
-  layer: layer
+const options = {
+  text: 'Agility',
+  fontSize: 20,
+  rotation: 45
 };
 
-const developer = new Developer(devOptions);
-layer.add(developer);
+const word = new Word(options, layer, stage);
+layer.add(word);
 stage.add(layer);
