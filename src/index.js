@@ -13,9 +13,7 @@ const devOptions = {
   stage: stage,
   layer: layer
 };
-const developer1 = new Developer(devOptions);
-const developer2 = new Developer(devOptions);
 
-layer.add(developer1);
-layer.add(developer2);
+const developer = new Developer(devOptions);
+layer.add(developer);
 stage.add(layer);
