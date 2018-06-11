@@ -1,0 +1,6 @@
+body {
+  background: rgb(212, 212, 212);
+}
+#container .konvajs-content {
+  border: solid 1px #000;
+}
